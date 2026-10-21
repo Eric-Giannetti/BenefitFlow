@@ -1,0 +1,24 @@
+root = true
+
+[*]
+charset = utf-8
+end_of_line = crlf
+insert_final_newline = true
+indent_style = space
+indent_size = 4
+trim_trailing_whitespace = true
+
+[*.cs]
+dotnet_sort_system_directives_first = true
+dotnet_separate_import_directive_groups = true
+csharp_style_namespace_declarations = file_scoped:warning
+csharp_style_prefer_primary_constructors = false:warning
+
+[*.{csproj,props,targets}]
+indent_size = 2
+
+[tests/**/*.cs]
+dotnet_diagnostic.CA1707.severity = none
+
+[src/**/Persistence/Migrations/*.cs]
+dotnet_diagnostic.CA1861.severity = none

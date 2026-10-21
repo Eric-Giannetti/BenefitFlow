@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <UserSecretsId>dotnet-BenefitFlow.Worker-013dcfc2-96de-43c7-8fb3-2603382fdaba</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MassTransit.RabbitMQ" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BenefitFlow.Application\BenefitFlow.Application.csproj" />
+    <ProjectReference Include="..\BenefitFlow.Infrastructure\BenefitFlow.Infrastructure.csproj" />
+  </ItemGroup>
+</Project>
